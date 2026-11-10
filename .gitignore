@@ -1,0 +1,7 @@
+node_modules/
+.npm
+*.log
+ResourceExtractor_log.txt
+.vscode/
+.DS_Store
+Thumbs.db

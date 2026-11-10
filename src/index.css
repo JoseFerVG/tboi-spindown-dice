@@ -1,0 +1,292 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   THE BINDING OF ISAAC: REPENTANCE - AUTHENTIC THEME STYLES
+   ========================================================================== */
+
+* {
+  image-rendering: pixelated;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0908;
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(65, 35, 25, 0.35) 0%, rgba(14, 10, 8, 0.92) 65%, rgba(6, 4, 3, 0.98) 100%),
+    linear-gradient(rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.5) 50%);
+  background-size: 100% 100%, 100% 4px;
+  color: #eeddc5;
+  font-family: 'Pixelify Sans', 'Silkscreen', monospace;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom Isaac Typography */
+.font-isaac-doodle {
+  font-family: 'Gloria Hallelujah', cursive, sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.font-isaac-pixel {
+  font-family: 'Silkscreen', 'Pixelify Sans', monospace;
+}
+
+.font-isaac-title {
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: -0.5px;
+}
+
+.font-isaac-sub {
+  font-family: 'VT323', monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #100b08;
+  border-left: 2px solid #291d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #473123;
+  border: 2px solid #6e4c37;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b4a35;
+}
+
+/* Treasure Room Spotlight Effect */
+.isaac-spotlight {
+  background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(255, 235, 175, 0.16) 0%, rgba(240, 180, 80, 0.04) 50%, transparent 80%);
+}
+
+/* Animations */
+@keyframes isaacBob {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+.animate-pedestal-item {
+  animation: isaacBob 2.3s ease-in-out infinite;
+}
+
+@keyframes pedestalShadowScale {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: scale(0.72);
+    opacity: 0.35;
+  }
+}
+
+.animate-pedestal-shadow {
+  animation: pedestalShadowScale 2.3s ease-in-out infinite;
+}
+
+/* Dice roll wobble & spin */
+@keyframes diceRollAnimation {
+  0% { transform: rotate(0deg) scale(1); }
+  20% { transform: rotate(-35deg) scale(1.22); }
+  50% { transform: rotate(190deg) scale(1.3); }
+  75% { transform: rotate(345deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.animate-dice-roll {
+  animation: diceRollAnimation 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Quality Tier Glows */
+@keyframes godTierPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.5), inset 0 0 15px rgba(168, 85, 247, 0.3);
+    border-color: #facc15;
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(250, 204, 21, 0.8), inset 0 0 22px rgba(168, 85, 247, 0.5);
+    border-color: #ffd700;
+  }
+}
+
+.quality-glow-4 {
+  animation: godTierPulse 2.4s infinite;
+  border-color: #facc15 !important;
+}
+
+.quality-glow-3 {
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.45), inset 0 0 8px rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8 !important;
+}
+
+.quality-glow-2 {
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.35);
+  border-color: #4ade80 !important;
+}
+
+.quality-glow-1 {
+  border-color: #ca8a04 !important;
+}
+
+.quality-glow-0 {
+  border-color: #64748b !important;
+}
+
+/* Isaac Stone Panel & Card Frames */
+.isaac-panel {
+  background: #17110e;
+  border: 3px solid #4a3325;
+  outline: 2px solid #1c130d;
+  outline-offset: -5px;
+  box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.85), 0 8px 24px rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  position: relative;
+}
+
+.isaac-card {
+  background: #16100d;
+  border: 2px solid #3d2a1e;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+
+.isaac-card:hover {
+  border-color: #78533b;
+  transform: translateY(-1px);
+}
+
+/* Isaac Chunky Beveled Buttons */
+.isaac-btn {
+  background: #2b1c14;
+  border: 3px solid #140d09;
+  border-top-color: #5b3d2c;
+  border-left-color: #5b3d2c;
+  border-right-color: #1a100a;
+  border-bottom-color: #1a100a;
+  color: #f0dfc8;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: filter 0.1s, transform 0.1s, border-color 0.15s;
+  box-shadow: 0 4px 0 #0d0705, 0 6px 12px rgba(0, 0, 0, 0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+
+.isaac-btn:hover {
+  filter: brightness(1.15);
+  border-top-color: #8c5d43;
+  border-left-color: #8c5d43;
+}
+
+.isaac-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #0d0705, 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.isaac-btn-active {
+  background: #7a1515 !important;
+  border-top-color: #ba2f2f !important;
+  border-left-color: #ba2f2f !important;
+  border-right-color: #3d0909 !important;
+  border-bottom-color: #3d0909 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 0 #2b0505, 0 0 14px rgba(186, 47, 47, 0.65) !important;
+}
+
+.isaac-btn-gold {
+  background: #735010 !important;
+  border-top-color: #d4a022 !important;
+  border-left-color: #d4a022 !important;
+  border-right-color: #382405 !important;
+  border-bottom-color: #382405 !important;
+  color: #fff9e6 !important;
+  box-shadow: 0 3px 0 #241602, 0 0 12px rgba(212, 160, 34, 0.5) !important;
+}
+
+/* Isaac Input Fields */
+.isaac-input {
+  background: #110b08;
+  border: 3px solid #3f2b1d;
+  border-top-color: #1a100a;
+  border-left-color: #1a100a;
+  border-right-color: #523725;
+  border-bottom-color: #523725;
+  color: #f7eee1;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 10px 14px;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.85);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.isaac-input:focus {
+  border-color: #b54545;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.85), 0 0 12px rgba(181, 69, 69, 0.45);
+}
+
+/* Isaac Post-It Note / Completion Paper */
+.isaac-postit {
+  position: relative;
+  background: #ecdcc1;
+  color: #24150b;
+  border: 2px solid #bba37b;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.75), 0 2px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+}
+
+.isaac-postit-tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68px;
+  height: 18px;
+  background: rgba(255, 245, 215, 0.72);
+  border-left: 1px dashed rgba(180, 160, 120, 0.6);
+  border-right: 1px dashed rgba(180, 160, 120, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Isaac Active Item Battery Pips */
+.isaac-battery-pip {
+  width: 10px;
+  height: 20px;
+  background: #0f1c0f;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease;
+}
+
+.isaac-battery-pip.charged {
+  background: linear-gradient(180deg, #78ff56 0%, #20aa12 100%);
+  box-shadow: 0 0 6px #45e028, inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  border-color: #0d3805;
+}
+
+.isaac-battery-pip.overflow-charged {
+  background: linear-gradient(180deg, #ffc93b 0%, #db6d00 100%);
+  box-shadow: 0 0 6px #ffa022, inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  border-color: #4a2100;
+}

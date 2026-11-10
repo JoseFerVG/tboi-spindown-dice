@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name_en": "The Sad Onion",
+    "name_es": "Cebolla triste",
+    "desc_en": "",
+    "desc_es": "",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "treasure",
+      "greedTreasure",
+      "craneGame"
+    ],
+    "sprite": "collectibles_001_thesadonion.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 2,
+    "name_en": "The Inner Eye",
+    "name_es": "El Ojo Interior",
+    "desc_en": "I - The Magician",
+    "desc_es": "I - El Mago",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "treasure",
+      "greedTreasure"
+    ],
+    "sprite": "collectibles_002_theinnereye.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 3,
+    "name_en": "Spoon Bender",
+    "name_es": "Doblador de cucharas",
+    "desc_en": "",
+    "desc_es": "",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [
+      "battery"
+    ],
+    "pools": [
+      "treasure",
+      "greedTreasure",
+      "craneGame"
+    ],
+    "sprite": "collectibles_003_spoonbender.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 4,
+    "name_en": "Cricket's Head",
+    "name_es": "Cabeza de Cricket",
+    "desc_en": "Bombs are Key",
+    "desc_es": "Las bombas son llaves",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "treasure",
+      "greedTreasure",
+      "craneGame"
+    ],
+    "sprite": "collectibles_004_cricketshead.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 5,
+    "name_en": "My Reflection",
+    "name_es": "Mi reflejo",
+    "desc_en": "Quadruple",
+    "desc_es": "Quadruple",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "treasure",
+      "greedTreasure",
+      "craneGame"
+    ],
+    "sprite": "collectibles_005_myreflection.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 6,
+    "name_en": "Number One",
+    "name_es": "Número 1",
+    "desc_en": "pickups",
+    "desc_es": "Número 1",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "treasure",
+      "greedTreasure"
+    ],
+    "sprite": "collectibles_006_numberone.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 7,
+    "name_en": "Blood of the Martyr",
+    "name_es": "Sangre del mártir",
+    "desc_en": "",
+    "desc_es": "",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [
+      "lazarussharedglobal"
+    ],
+    "pools": [
+      "treasure",
+      "angel",
+      "greedTreasure",
+      "greedAngel",
+      "woodenChest"
+    ],
+    "sprite": "collectibles_007_bloodofthemartyr.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 8,
+    "name_en": "Brother Bobby",
+    "name_es": "Hermano Bobby",
+    "desc_en": "When you die, resurrect as Lazarus Risen with 1 Red Heart container",
+    "desc_es": "¡Probabilidad Doble!",
+    "quality": 0,
+    "type": "familiar",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "treasure",
+      "greedTreasure",
+      "babyShop"
+    ],
+    "sprite": "collectibles_008_brotherbobby.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 9,
+    "name_en": "Skatole",
+    "name_es": "Escatol",
+    "desc_en": "Start with random stats and items each run",
+    "desc_es": "Inicia cada partida con estadísticas y objetos aleatorios",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "shellGame"
+    ],
+    "sprite": "collectibles_009_skatole.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 10,
+    "name_en": "Halo of Flies",
+    "name_es": "Halo de moscas",
+    "desc_en": "Wiggle Worm",
+    "desc_es": "Gusano Ondulante",
+    "quality": 0,
+    "type": "familiar",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "treasure",
+      "keyMaster",
+      "greedTreasure",
+      "babyShop"
+    ],
+    "sprite": "collectibles_010_haloofflies.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 118,
+    "name_en": "Brimstone",
+    "name_es": "Azufre",
+    "desc_en": "Brimstone",
+    "desc_es": "Azufre",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "devil",
+      "greedDevil",
+      "ultraSecret"
+    ],
+    "sprite": "collectibles_118_brimstone.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 182,
+    "name_en": "Sacred Heart",
+    "name_es": "Sagrado corazón",
+    "desc_en": "Beth's Essence",
+    "desc_es": "Esencia de Beth",
+    "quality": 0,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [],
+    "pools": [
+      "angel",
+      "greedAngel",
+      "ultraSecret"
+    ],
+    "sprite": "collectibles_182_sacredheart.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 356,
+    "name_en": "Car Battery",
+    "name_es": "Batería de Coche",
+    "desc_en": "",
+    "desc_es": "",
+    "quality": 3,
+    "type": "passive",
+    "maxcharges": 0,
+    "achievement": null,
+    "tags": [
+      "battery",
+      "summonable",
+      "offensive",
+      "nocantrip"
+    ],
+    "pools": [
+      "shop",
+      "batteryBum",
+      "greedShop"
+    ],
+    "sprite": "collectibles_356_carbattery.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 628,
+    "name_en": "Death Certificate",
+    "name_es": "Certificado de Defunción",
+    "desc_en": "Teleports Isaac to a floor that contains every item in the game\nChoosing an item from this floor teleports Isaac back to the room he came from",
+    "desc_es": "Te lleva a un piso que contiene todos los objetos del juego\nTras tomar un objeto, te devuelve a la habitación en la que estabas",
+    "quality": 4,
+    "type": "active",
+    "maxcharges": 0,
+    "achievement": "636",
+    "tags": [
+      "offensive",
+      "nocantrip"
+    ],
+    "pools": [
+      "secret",
+      "greedSecret"
+    ],
+    "sprite": "collectibles_628_deathcertificate.png",
+    "is_skipped_default": false
+  },
+  {
+    "id": 723,
+    "name_en": "Spindown Dice",
+    "name_es": "Dado Reductor",
+    "desc_en": "two",
+    "desc_es": "dos",
+    "quality": 4,
+    "type": "active",
+    "maxcharges": 6,
+    "achievement": "584",
+    "tags": [
+      "offensive",
+      "nocantrip"
+    ],
+    "pools": [
+      "treasure",
+      "secret",
+      "greedShop",
+      "greedSecret",
+      "craneGame"
+    ],
+    "sprite": "collectibles_723_spindowndice.png",
+    "is_skipped_default": false
+  }
+]
